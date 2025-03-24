@@ -57,7 +57,7 @@ export default function Header() {
             <DropdownMenuItem>Profile</DropdownMenuItem>
             <DropdownMenuItem>Settings</DropdownMenuItem>
             <DropdownMenuSeparator />
-            <DropdownMenuItem>Log out</DropdownMenuItem>
+            <DropdownMenuItem >Log out</DropdownMenuItem>
           </DropdownMenuContent>
         </DropdownMenu>
       </div>

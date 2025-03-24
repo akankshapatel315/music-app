@@ -40,12 +40,12 @@ export function getMenuList(): Group[] {
           icon: LayoutGrid,
           submenus: []
         },
-        {
-          href: "/library",
-          label: "Library",
-          icon: Music,
-          submenus: []
-        },
+        // {
+        //   href: "/library",
+        //   label: "Library",
+        //   icon: Music,
+        //   submenus: []
+        // },
         {
           href: "/playlists",
           label: "Playlists",
@@ -76,12 +76,12 @@ export function getMenuList(): Group[] {
           icon: Heart,
           submenus: []
         },
-        {
-          href: "/settings",
-          label: "Settings",
-          icon: Settings,
-          submenus: []
-        }
+        // {
+        //   href: "/settings",
+        //   label: "Settings",
+        //   icon: Settings,
+        //   submenus: []
+        // }
       ]
     },
     

@@ -1,12 +1,13 @@
 "use client";
 
-import { Footer } from "@/components/panel/footer";
+
 import { Sidebar } from "@/components/panel/sidebar";
 import { useSidebar } from "@/hooks/use-sidebar";
 import { useStore } from "@/hooks/use-store";
 import { cn } from "@/lib/utils";
+import { MusicPlayer } from "../musicplayer/MusicPlayer";
 
-export default function AdminPanelLayout({
+export default function SidebarLayout({
   children
 }: {
   children: React.ReactNode;
@@ -25,14 +26,14 @@ export default function AdminPanelLayout({
       >
         {children}
       </main>
-      <footer
+      <div
         className={cn(
-          "transition-[margin-left] ease-in-out duration-300",
+          "fixed bottom-0 left-0 right-0 h-20 bg-white dark:bg-zinc-800 border-t border-zinc-200 dark:border-zinc-700 z-50 transition-[margin-left] ease-in-out duration-300",
           !settings.disabled && (!getOpenState() ? "lg:ml-[90px]" : "lg:ml-72")
         )}
       >
-        <Footer />
-      </footer>
+        <MusicPlayer />
+      </div>
     </>
   );
 }
